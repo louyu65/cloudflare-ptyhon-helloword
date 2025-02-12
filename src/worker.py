@@ -31,6 +31,9 @@ async def env(req: Request):
         "message": "Here is an example of getting an environment variable: "
         + env.MESSAGE
     }
+@app.get("/versions")
+async def versions(req: Request):
+    return {"version": "1.0.0"}
 
 
 class Item(BaseModel):
