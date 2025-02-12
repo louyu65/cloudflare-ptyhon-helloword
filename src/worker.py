@@ -98,13 +98,13 @@ class PostDataError(Exception):
 
 def knockDoor():
     defaultUA = 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 Edg/126.0.0.0'
-    userId = '1408002502'
+    userId = _userId
 
-    deviceId = 'F7vZJVisRAUjetQM'
+    deviceId = _deviceId
 
-    ssecurity = 'TjXYY5XJFLyxI+FXyGMPwA=='
-    serviceToken = 'rksN6xib8flUq7gQwZeTyGVQTCp7nw17/o87TTjajV2jiNe60v4sSiwiYloTQHtqqWiwRIIwtzbuCvFsMZAyc9VdzqeaFQDo4cGrU30JLgSIF1rbo3NNPXH+Obpb4qjnlUzzCmeZyPAptcutSVSZ3Yn8A/KCWjp8AUdIawNrrmM='
-    scence_id = '1889253691920375811'
+    ssecurity = _ssecurity
+    serviceToken = _serviceToken
+    scence_id = _knock_door_scence
     scence_name = '有人敲门'
     uri = '/appgateway/miot/appsceneservice/AppSceneService/RunScene'
     data = {"scene_id": scence_id, "trigger_key": "user.click"}
